@@ -5,7 +5,17 @@ const handlebars = require('express-handlebars');
 const app = express();
 const port = 9999;
 
+const route = require('./routes');
+
 app.use(express.static(path.join(__dirname,'public')));
+
+// Middleware by url
+app.use(express.urlencoded({
+  extended: true
+}));
+
+// Middleware by json
+app.use(express.json());
 
 //HTTP Logger
 app.use(morgan('combined'));
@@ -19,14 +29,8 @@ app.set('view engine', 'hbs');
 
 app.set('views', path.join(__dirname, 'resources/views'));
 // console.log('PATH: ',path.join(__dirname, 'resources/views'));
-
-app.get('/', (req, res) => {
-  res.render('home');
-})
-
-app.get('/news', (req, res) => {
-  res.render('news');
-})
+//Route init
+route(app);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
