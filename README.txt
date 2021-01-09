@@ -19,6 +19,8 @@ npm install node-sass --save-dev
 # lint-staged: https://www.npmjs.com/package/lint-staged
 # husky https://www.npmjs.com/package/husky
 npm i prettier lint-staged husky --save-dev
+# mongoose https://www.npmjs.com/package/mongoose
+
 
 ##############################################################################
 #git

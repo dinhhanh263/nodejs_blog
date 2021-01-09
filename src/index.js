@@ -7,6 +7,10 @@ const port = 9999;
 
 const route = require('./routes');
 
+//connection
+const db = require('./config/db');
+db.connect();
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Middleware by url
