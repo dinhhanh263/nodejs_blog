@@ -20,6 +20,7 @@ npm install node-sass --save-dev
 # husky https://www.npmjs.com/package/husky
 npm i prettier lint-staged husky --save-dev
 # mongoose https://www.npmjs.com/package/mongoose
+# Handle bar https://handlebarsjs.com/
 
 
 ##############################################################################
