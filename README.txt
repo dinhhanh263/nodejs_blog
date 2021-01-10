@@ -21,6 +21,7 @@ npm install node-sass --save-dev
 npm i prettier lint-staged husky --save-dev
 # mongoose https://www.npmjs.com/package/mongoose
 # Handle bar https://handlebarsjs.com/
+#slug npm install mongoose-slug-generator --save-dev
 
 
 ##############################################################################
