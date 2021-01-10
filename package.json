@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/dinhhanh263/nodejs_blog#readme",
   "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+    "src/**/*.{js,json,scss}": "prettier --single-quote --allow-empty --trailing-comma all --tab-width 4 --write"
   },
   "husky": {
     "hooks": {
