@@ -22,13 +22,25 @@
     "url": "https://github.com/dinhhanh263/nodejs_blog/issues"
   },
   "homepage": "https://github.com/dinhhanh263/nodejs_blog#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --allow-empty --trailing-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.0"
+    "express-handlebars": "^5.2.0",
+    "mongoose": "^5.11.11"
   },
   "devDependencies": {
+    "husky": "^4.3.7",
+    "lint-staged": "^10.5.3",
     "morgan": "^1.10.0",
     "node-sass": "^5.0.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
   }
 }
