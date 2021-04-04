@@ -21,7 +21,14 @@ npm install node-sass --save-dev
 npm i prettier lint-staged husky --save-dev
 # mongoose https://www.npmjs.com/package/mongoose
 # Handle bar https://handlebarsjs.com/
-#slug npm install mongoose-slug-generator --save-dev
+#slug: npm install mongoose-slug-generator --save-dev
+# form do not support PUT/DELETE method so need run below command
+npm install method-override
+# soft delete technic https://www.npmjs.com/package/mongoose-delete
+npm install mongoose-delete
+# mongoose sequence --> Auto increse ID on table
+npm install --save mongoose-sequence
+
 
 
 ##############################################################################
